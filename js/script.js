@@ -31,3 +31,16 @@ btn.addEventListener('click',function (){
     }
 
 })
+
+let guns =document.querySelector(".gun")
+let bbtt =document.querySelector(".baton")
+let shows = document.querySelector(".show2")
+
+bbtt.addEventListener('click',function(){
+    let x= Number(guns.value)
+    if(x){
+        for(i=1;i<=10;i++){
+            shows.innerHTML +=`${x}x${i}=${x*i} <br>`
+        }
+    }     
+})
